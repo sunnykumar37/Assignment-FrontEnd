@@ -151,10 +151,25 @@
       color: #fa1239;
     }
     
+    .underline-container {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      display: block;
+    }
+    
     .hero-underline {
-      width: 60%;
+      width: 100%;
       height: 8px;
-      margin-bottom: 20px;
+      max-width: 100%;
+      position: relative;
+      left: -10%;
+      scale: 1.8;
+    }
+    
+    .highlight {
+      position: relative;
     }
     
     .hero-description {
@@ -450,6 +465,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      max-width: 100%;
+      overflow: hidden;
     }
     
     .cloud-background {
@@ -490,9 +507,9 @@
       width: 100%;
       height: 100%;
       scale: 1.5;
-      /* transform: translateY(-70%); */
       z-index: 99;
-      
+      max-width: 100%;
+      object-fit: contain;
     }
     
     .character {
@@ -577,6 +594,15 @@
         transform: translateX(-50%);
       }
       
+      .underline-container {
+        bottom: -6px;
+      }
+      
+      .hero-underline {
+        width: 100%;
+        height: 6px;
+      }
+      
       .gradient-circle {
         width: 400px;
         height: 400px;
@@ -652,6 +678,15 @@
         width: 80%;
       }
       
+      .underline-container {
+        bottom: -7px;
+      }
+      
+      .hero-underline {
+        width: 100%;
+        height: 7px;
+      }
+      
       .section-title {
         font-size: 26px;
       }
@@ -668,11 +703,13 @@
         width: 80px;
         height: 80px;
         left: 20px;
+        max-width: 100%;
       }
       
       .character {
         width: 40px;
         right: 20px;
+        max-width: 100%;
       }
       
       .service-title {
@@ -698,12 +735,13 @@
         line-height: 78px;
       }
       
+      .underline-container {
+        bottom: -10px;
+      }
+      
       .hero-underline {
-        width: 58%;
-        scale: 2.2;
-        position: absolute;
-        top: 52%;
-        left: -8%;
+        width: 100%;
+        height: 10px;
       }
       
       .hero-description {
@@ -761,11 +799,13 @@
         width: 90px;
         height: 90px;
         left: 25px;
+        max-width: 100%;
       }
       
       .character {
         width: 45px;
         right: 25px;
+        max-width: 100%;
       }
       
       .rating-card { left: 30px; top: 70%; }
@@ -822,9 +862,10 @@
         <div class="hero-text-section">
           <div class="hero-title-container">
             <h1 class="hero-title">
-              Your Resume <span class="highlight">Deserves A Yes</span> Let's Make It Happen
+              Your Resume <span class="highlight">Deserves A Yes<span class="underline-container">
+                <img src="../assets/images/img_group_4.svg" alt="Decorative underline" class="hero-underline" />
+              </span></span> Let's Make It Happen
             </h1>
-            <img src="../assets/images/img_group_4.svg" alt="Decorative underline" class="hero-underline" />
           </div>
           
           <p class="hero-description">
