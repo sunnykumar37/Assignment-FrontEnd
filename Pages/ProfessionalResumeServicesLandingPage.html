@@ -1,0 +1,933 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Resume Writing Services | ATS-Optimized Resumes | Get More Interviews</title>
+  <meta name="description" content="Get professionally written, ATS-optimized resumes crafted by HR experts. Land more interviews with resumes designed to pass filters and get your foot in the door." />
+  <meta name="keywords" content="resume writing, ATS optimized resume, professional resume, cover letter, LinkedIn profile, interview preparation, HR experts" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Professional Resume Writing Services | ATS-Optimized Resumes" />
+  <meta property="og:description" content="Get professionally written, ATS-optimized resumes crafted by HR experts. Land more interviews with expert resume services." />
+  
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #000000;
+      overflow-x: hidden; /* avoid tiny right-side overflow when using full-bleed header */
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Layout components */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .hero-section {
+      background: linear-gradient(230deg, #ffe7eb 0%, #ffbfc9 100%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      /* Use a shared horizontal padding variable so header can exactly counter it */
+      --section-x: 20px;
+      padding: 0 var(--section-x) 60px;
+      overflow: hidden; /* prevents circles/cards from spilling into white area */
+    }
+    
+    .header {
+      background-color: #ffffff;
+      /* Make header full-bleed relative to section padding (no 100vw overflow) */
+      width: calc(100% + (var(--section-x) * 2));
+      margin-left: calc(var(--section-x) * -1);
+      margin-right: calc(var(--section-x) * -1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+    }
+    
+    .logo {
+      width: 150px;
+      height: auto;
+    }
+    
+    .nav-menu {
+      display: none;
+      gap: 44px;
+      align-items: center;
+    }
+    
+    .nav-item {
+      font-size: 18px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #282828;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    
+    .nav-item:hover {
+      color: #fa1239;
+    }
+    
+    .cta-button {
+      background-color: #fa1239;
+      color: #ffffff;
+      font-size: 16px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 22px;
+      padding: 12px 22px;
+      cursor: pointer;
+      box-shadow: 0px 0px 12px #fa123993;
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #e10e32;
+      transform: translateY(-2px);
+    }
+    
+    .hero-content {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 0 auto 8px;
+    }
+    
+    .hero-text-section {
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 46px;
+    }
+    
+    .hero-title-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .hero-title {
+      font-size: 32px;
+      font-family: Figtree;
+      font-weight: 700;
+      line-height: 1.2;
+      text-transform: capitalize;
+      color: #000000;
+      width: 100%;
+    }
+    
+    .hero-title .highlight {
+      color: #fa1239;
+    }
+    
+    .hero-underline {
+      width: 60%;
+      height: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .hero-description {
+      font-size: 14px;
+      font-family: Figtree;
+      font-weight: 400;
+      line-height: 1.8;
+      text-transform: capitalize;
+      color: #000000;
+      width: 100%;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+    
+    .btn-primary {
+      background-color: #ffffff;
+      color: #fa1239;
+      font-size: 16px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: uppercase;
+      border: 1px solid #fa1239;
+      border-radius: 22px;
+      padding: 12px 22px;
+      cursor: pointer;
+      box-shadow: 0px 0px 12px #fa123993;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: #fa1239;
+      color: #ffffff;
+    }
+    
+    .btn-secondary {
+      background-color: #fa1239;
+      color: #ffffff;
+      font-size: 16px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 22px;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 22px;
+      padding: 12px 22px;
+      cursor: pointer;
+      box-shadow: 0px 0px 12px #fa123993;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #e10e32;
+      transform: translateY(-2px);
+    }
+    
+    .hero-image-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+    }
+    
+    .hero-image-stack {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .gradient-circle {
+      background: linear-gradient(180deg, #ffe4e9 0%, #ffcad3 100%);
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    
+    .inner-circle {
+      background: linear-gradient(180deg, #fecdd5 0%, #ffe1e6 100%);
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    
+    .hero-image {
+      position: relative;
+      z-index: 3;
+      width: 250px;
+      height: auto;
+      margin-left: 0px;
+      left: calc(50% + 15px);
+      top: 20%;
+      transform: translateX(-50%);
+    }
+    
+    .rating-card {
+      background-color: rgba(255, 255, 255, 0.79);
+      border-radius: 10px;
+      padding: 14px;
+      box-shadow: 0px 4px 91px rgba(136, 136, 136, 1);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      position: absolute;
+      top: 80%;
+      left: 20px;
+      transform: translateY(-10%);
+      transform: translateX(-40%);
+      z-index: 4;
+    }
+    
+    .rating-number {
+      font-size: 32px;
+      font-family: Inter;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #1cb098;
+      
+    }
+    
+    .rating-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .rating-stars {
+      display: flex;
+      gap: 2px;
+    }
+    
+    .star {
+      width: 16px;
+      height: 16px;
+      color: #ffd700;
+    }
+    
+    .rating-text {
+      font-size: 14px;
+      font-family: Figtree;
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    
+    .stats-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 26px 22px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      position: absolute;
+      bottom: 20%;
+      right: 10px;
+      z-index: 4;
+      transform: translateY(-10%);
+      transform: translateX(50%);
+    }
+    
+    .stats-icon {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .stats-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .stats-number {
+      font-size: 20px;
+      font-family: Figtree;
+      font-weight: 800;
+      line-height: 1.2;
+      text-transform: capitalize;
+      color: #000000;
+    }
+    
+    .stats-text {
+      font-size: 12px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 1.2;
+      text-transform: capitalize;
+      color: #666666;
+    }
+    
+    /* Footer section */
+    .footer-section {
+      background-color: #ffffff;
+      background-image: url('../assets/images/img_group_13.png.png');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      padding: 50px 20px;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .section-tag {
+      background-color: rgba(253, 146, 164, 0.3);
+      color: #000000;
+      font-size: 16px;
+      font-family: Figtree;
+      font-weight: 600;
+      line-height: 22px;
+      text-transform: capitalize;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+    }
+    
+    .section-title {
+      font-size: 20px;
+      font-family: Figtree;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: capitalize;
+      color: #000000;
+      max-width: 600px;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      width: 100%;
+    }
+    
+    .service-card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+    
+    .service-image-container {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .service-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    
+    .cover-letter-scene {
+      position: relative;
+      width: 100%;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cloud-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+      border-radius: 8px;
+      opacity: 0.3;
+    }
+    
+    .cloud-background::before,
+    .cloud-background::after {
+      content: '';
+      position: absolute;
+      background: #d0d0d0;
+      border-radius: 50px;
+      opacity: 0.4;
+    }
+    
+    .cloud-background::before {
+      width: 40px;
+      height: 20px;
+      top: 20px;
+      left: 20px;
+    }
+    
+    .cloud-background::after {
+      width: 30px;
+      height: 15px;
+      top: 40px;
+      right: 30px;
+    }
+    
+    .paper-plane {
+      width: 100%;
+      height: 100%;
+      scale: 1.5;
+      /* transform: translateY(-70%); */
+      z-index: 99;
+      
+    }
+    
+    .character {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35px;
+      height: auto;
+      z-index: 3;
+    }
+    
+    .service-title {
+      font-size: 18px;
+      font-family: Figtree;
+      font-weight: 500;
+      line-height: 1.2;
+      color: #000000;
+      text-align: center;
+    }
+    
+    .service-description {
+      font-size: 16px;
+      font-family: Figtree;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #000000;
+      text-align: center;
+    }
+    
+    /* Typography */
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+    }
+    
+    /* Interactive states */
+    button:focus {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+    
+    button:active {
+      transform: scale(0.95);
+    }
+    
+    /* Responsive media queries */
+    @media (min-width: 640px) {
+      .hero-section {
+        gap: 80px;
+        --section-x: 40px;
+        padding: 0 var(--section-x);
+      }
+      
+      .header {
+        padding: 20px 60px;
+      }
+      
+      .logo {
+        width: 180px;
+      }
+      
+      .hero-title {
+        font-size: 48px;
+      }
+      
+      .hero-description {
+        font-size: 15px;
+      }
+      
+      .hero-buttons {
+        flex-direction: row;
+        gap: 24px;
+      }
+      
+      .hero-image {
+        width: 300px;
+        left: calc(60% + 15px);
+        top: 15%;
+        transform: translateX(-50%);
+      }
+      
+      .gradient-circle {
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        position: absolute;
+        top: 70%;
+      }
+      
+      .inner-circle {
+        width: 280px;
+        height: 280px;
+        left: 50%;
+        position: absolute;
+        top: 70%;
+      }
+      
+      .rating-number {
+        font-size: 48px;
+      }
+      
+      .rating-text {
+        font-size: 18px;
+      }
+      
+      .stats-number {
+        font-size: 24px;
+      }
+      
+      .stats-text {
+        font-size: 14px;
+      }
+      
+      .section-title {
+        font-size: 24px;
+      }
+      
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .rating-card { left: 20px; top: 75%; }
+      
+      .stats-card { right: 10px; bottom: 20%; }
+    }
+    
+    @media (min-width: 768px) {
+      .nav-menu {
+        display: flex;
+      }
+      
+      .hero-content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 60px;
+      }
+      
+      .hero-text-section {
+        width: 50%;
+      }
+      
+      .hero-image-section {
+        width: 50%;
+        z-index: 99;
+        
+      }
+      
+      .hero-title {
+        font-size: 56px;
+      }
+      
+      .hero-description {
+        font-size: 16px;
+        width: 80%;
+      }
+      
+      .section-title {
+        font-size: 26px;
+      }
+      
+      .service-image {
+        height: 180px;
+      }
+      
+      .cover-letter-scene {
+        height: 140px;
+      }
+      
+      .paper-plane {
+        width: 80px;
+        height: 80px;
+        left: 20px;
+      }
+      
+      .character {
+        width: 40px;
+        right: 20px;
+      }
+      
+      .service-title {
+        font-size: 20px;
+      }
+      
+      .service-description {
+        font-size: 18px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .header {
+        padding: 20px 100px;
+      }
+      
+      .logo {
+        width: 230px;
+      }
+      
+      .hero-title {
+        font-size: 64px;
+        line-height: 78px;
+      }
+      
+      .hero-underline {
+        width: 58%;
+        scale: 2.2;
+        position: absolute;
+        top: 28%;
+        left: 7%;
+      }
+      
+      .hero-description {
+        width: 78%;
+      }
+      
+      .hero-image {
+        width: 400px;
+        left: calc(50% + 15px);
+        top: 10%;
+        transform: translateX(-50%);
+      }
+      
+      .gradient-circle {
+        width: 500px;
+        height: 500px;
+        left: 63%;
+      }
+      
+      .inner-circle {
+        width: 350px;
+        height: 350px;
+        left: 63%;
+      }
+      
+      .rating-number {
+        font-size: 64px;
+      }
+      
+      .rating-text {
+        font-size: 24px;
+      }
+      
+      .stats-number {
+        font-size: 30px;
+      }
+      
+      .stats-text {
+        font-size: 17px;
+      }
+      
+      .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .service-image {
+        height: 200px;
+      }
+      
+      .cover-letter-scene {
+        height: 160px;
+      }
+      
+      .paper-plane {
+        width: 90px;
+        height: 90px;
+        left: 25px;
+      }
+      
+      .character {
+        width: 45px;
+        right: 25px;
+      }
+      
+      .rating-card { left: 30px; top: 70%; }
+      
+      .stats-card { right: 10px; bottom: 20%; }
+    }
+    
+    @media (min-width: 1280px) {
+      .hero-section {
+        gap: 90px;
+      }
+      
+      .hero-image {
+        width: 506px;
+        left: calc(50% + 15px);
+        top: 5%;
+        transform: translateX(-50%);
+      }
+      
+      .gradient-circle {
+        width: 632px;
+        height: 632px;
+        left: 64%;
+      }
+      
+      .inner-circle {
+        width: 476px;
+        height: 476px;
+        left: 64%;
+      }
+      
+      .rating-card { left: 40px; top: 55%; }
+      .stats-card { right: -6px; bottom: 24px; }
+    }
+  </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsunnysap6822back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body>
+  <main class="main-container">
+    <section class="hero-section">
+      <header class="header">
+        <img src="../assets/images/img_header_logo.png.png" alt="Company Logo" class="logo" />
+        <nav class="nav-menu" role="navigation">
+          <a href="#" class="nav-item" role="menuitem">Home</a>
+          <a href="#" class="nav-item" role="menuitem">About Us</a>
+          <a href="#" class="nav-item" role="menuitem">Our Services</a>
+          <a href="#" class="nav-item" role="menuitem">Pricing</a>
+          <a href="#" class="nav-item" role="menuitem">FAQ</a>
+        </nav>
+        <button class="cta-button">Get A Quote</button>
+      </header>
+      
+      <div class="hero-content">
+        <div class="hero-text-section">
+          <div class="hero-title-container">
+            <h1 class="hero-title">
+              Your Resume <span class="highlight">Deserves A Yes</span> Let's Make It Happen
+            </h1>
+            <img src="../assets/images/img_group_4.svg" alt="Decorative underline" class="hero-underline" />
+          </div>
+          
+          <p class="hero-description">
+            If Your Resume Isn't Getting Responses, It's Time For An Upgrade. 
+            Get An ATS-Optimized Resume Crafted By HR Experts To Help You 
+            Land More Interviews. Our Resumes Are Designed To Get Your Foot 
+            In The Door And Place Your Name At The Top Of The Shortlist.
+          </p>
+          
+          <div class="hero-buttons">
+            <button class="btn-primary">Resume Packages</button>
+            <button class="btn-secondary">Contact Us</button>
+          </div>
+        </div>
+        
+        <div class="hero-image-section">
+          <div class="hero-image-stack">
+            <div class="gradient-circle"></div>
+            <div class="inner-circle"></div>
+            <img src="../assets/images/img_portrait_happy.png.png" alt="Happy professional woman holding books and folders" class="hero-image" />
+            
+            <div class="rating-card">
+              <span class="rating-number">4.9</span>
+              <div class="rating-info">
+                <div class="rating-stars">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+                <span class="rating-text">Instructor Rating</span>
+              </div>
+            </div>
+            
+            <div class="stats-card">
+              <img src="../assets/images/img_mask_group.png" alt="Resume icon" class="stats-icon" />
+              <div class="stats-info">
+                <span class="stats-number">260+</span>
+                <span class="stats-text">Online Resume Created</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer-section">
+      <div class="footer-content">
+        <div class="section-header">
+          <button class="section-tag">What You Get</button>
+          <h2 class="section-title">You're Not Just Another Applicant And Your Resume Shouldn't Look Like One</h2>
+        </div>
+        
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="../assets/images/img_cms.svg" alt="ATS resume filtering illustration" class="service-image" />
+              <h3 class="service-title">A Resume That Passes ATS Filters</h3>
+            </div>
+            <p class="service-description">
+              Get a professionally written, keyword-optimized resume that lands in recruiter inboxes—not rejection piles.
+            </p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-image-container">
+              <div class="cover-letter-scene">
+                <div class="cloud-background"></div>
+                <!-- <img src="../assets/images/img_freepik_mail_inject_86.svg" alt="Paper plane" class="paper-plane" />
+                
+                <img src="../assets/images/img_freepik_character_inject_86.svg" alt="Person" class="character" /> -->
+                <img src = "../assets/images/New.png" class="paper-plane">
+              </div>
+              <h3 class="service-title">A Cover Letter That Gets Read</h3>
+            </div>
+            <p class="service-description">
+              Stand out with a cover letter that speaks directly to the role and reflects your strengths.
+            </p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="../assets/images/img_cms_gray_200_01.svg" alt="LinkedIn profile optimization illustration" class="service-image" />
+              <h3 class="service-title">A LinkedIn Profile That Works For You</h3>
+            </div>
+            <p class="service-description">
+              Attract the right eyes, start conversations, and show up in recruiter searches.
+            </p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-image-container">
+              <img src="../assets/images/img_cms_gray_200_01_200x300.svg" alt="Interview preparation illustration" class="service-image" />
+              <h3 class="service-title">Interview Confidence</h3>
+            </div>
+            <p class="service-description">
+              Interview preparation with real HR professionals so you speak clearly, confidently, and convincingly.
+            </p>
+          </article>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
